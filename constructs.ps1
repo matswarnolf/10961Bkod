@@ -18,5 +18,6 @@ switch ($drive.DriveType) {
     $services = Get-Service
     foreach ($service in $services) {
     $service | Select-Object -Property servicename | export-csv -Path c:\temp\testar.csv -Append -NoTypeInformation
-    Write-Output "the servicename is $($service.name)"}
+    Write-Output "the servicename is $($service.name)"
+    }
     
